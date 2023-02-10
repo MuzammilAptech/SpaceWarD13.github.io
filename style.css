@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    text-decoration: none;
+}
+#gameframe {
+    background-image: url('./Images/backgrounds/opening.jpg');
+    height: 100vh;
+    width:100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.start-menu {
+    height: 70vh;
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    background: rgba(0, 0, 0, 0.73);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+    animation:  showing 7s;
+}
+
+.start-menu h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+}
+.start-menu h6 {
+    font-size: 30px;
+    width: 100%;
+    height: auto;
+    color: rgb(0, 217, 255);
+    padding-bottom: 20px;
+}
+.start-menu p {
+    font-size: 14px;
+    color: white;
+}
+.start-menu a{
+    background-color: transparent;
+  color: white;
+  letter-spacing: 3px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none ;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.start-menu a:hover {
+    color: aqua;
+    transition: all .5s;
+}
+.start-menu p {
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+#heroship1 {
+    width: 37%;
+    display: flex;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    animation: shipcoming 30s;
+}
+#heroship2 {
+    position: absolute;
+    top: 77%;
+    right: 23%;
+    width: 13%;
+    animation: shipcoming2 40s;
+}
+#heroship3 {
+    width: 15%;
+    position: absolute;
+    top: 60%;
+    right: 4%;
+    animation: shipcoming3 45s;
+}
+@keyframes shipcoming {
+0% {
+    width: 0%;
+    transform: translateY(160px);
+}
+50% {
+    width: 37%;
+    transform: translateY(-5px);
+}
+60% {
+    width: 37%;
+    transform: translateY(5px);
+}
+65% {
+    width: 37%;
+    transform: translateY(-5px);
+}
+70% {
+    width: 37%;
+    transform: translateY(5px);
+}
+75% {
+    width: 37%;
+    transform: translateY(-5px);
+}
+80% {
+    width: 37%;
+    transform: translateY(5px);
+}
+85% {
+    width: 37%;
+    transform: translateY(-5px);
+}
+90% {
+    width: 37%;
+    transform: translateY(5px);
+}
+100% {
+    width: 37%;
+    transform: translateY(-5px);
+}
+}
+/* ship2 animation */
+@keyframes shipcoming2 {
+    0% {
+        width: 0%;
+        transform: translateY(100px);
+    }
+    50% {
+        width: 13%;
+        transform: translateY(-2px);
+    }
+    60% {
+        width: 13%;
+        transform: translateY(2px);
+    }
+    70% {
+        width: 13%;
+        transform: translateY(-2px);
+    }
+    80% {
+        width: 13%;
+        transform: translateY(2px);
+    }
+    90% {
+        width: 13%;
+        transform: translateY(-2px);
+    }
+    100% {
+        width: 13%;
+        transform: translateY(2px);
+    }
+    }
+    @keyframes shipcoming3 {
+        0% {
+            width: 0%;
+            transform: translateY(100px);
+        }
+        50% {
+            width: 15%;
+            transform: translateY(-2px);
+        }
+        60% {
+            width: 15%;
+            transform: translateY(2px);
+        }
+        70% {
+            width: 15%;
+            transform: translateY(-2px);
+        }
+        80% {
+            width: 15%;
+            transform: translateY(2px);
+        }
+        90% {
+            width: 15%;
+            transform: translateY(-2px);
+        }
+        100% {
+            width: 15%;
+            transform: translateY(2px);
+        }
+        }
+@keyframes showing {
+    0% {
+        opacity: 0%;
+    }
+    20% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
