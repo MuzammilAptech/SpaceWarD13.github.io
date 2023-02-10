@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('../Images/backgrounds/nasa.jpg');
+            background-size: cover;
+            height: 96vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.73);
+        }
+        .container {
+            height: 50vh;
+            width: 40vh;
+            position: relative;
+            top: 20%;
+            left: 45%;
+            display:flex;
+            flex-direction: column;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+        }
+        .container h1 {
+            text-transform: uppercase;
+            color:white;
+        }
+        img{
+            position: absolute;
+            bottom: 0%;
+            left: 27%;
+            height: 80%;
+        }
+        #addbtn {
+            background-color: aqua;
+            padding: 5px 25px;
+            border-radius: 5px;
+            border-top-left-radius:10px;
+            border-bottom-right-radius:10px;
+            position: absolute;
+            top: 55%;
+            right: 7%;
+            text-transform: uppercase;
+        }
+        #txtdata {
+            background-color: black;
+            color: aqua;
+            padding: 5px 20px;
+            box-shadow: 3px 2px 5px aqua;
+        }
+    </style>
+</head>
+<body>
+    <img src="../Images/characters/soldier.png" alt="">
+    <div class="container">
+            <h1 >YOUR Code name</h1>
+            <input type="text" name="" id="txtdata">
+            <button type="button" id="addbtn"onclick="window.location.href='stage1.html';">OK</button>
+            <h2 id="playerName"></h2>
+        </div>
+<script src="game.js"></script>
+</body>
+</html>

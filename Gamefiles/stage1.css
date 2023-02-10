@@ -1,0 +1,234 @@
+.ship1 {
+    width: 160px;
+    height: 210px;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    animation: flyingship1 10s;
+    cursor: crosshair;
+}
+
+body:hover {
+  cursor: crosshair;
+}
+.ship2 {
+  width: 160px;
+  height: 210px;
+  position: absolute;
+  right: 18%;
+  top: 1%;
+  animation: flyingship2 12s;
+  cursor: crosshair;
+}
+.ship3 {
+  width: 160px;
+  height: 210px;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  animation: flyingship3 11s;
+  cursor: crosshair;
+}
+.ship4 {
+  width: 160px;
+  height: 210px;
+  position: absolute;
+  left: 25%;
+  top: 2%;
+  animation: flyingship3 11s;
+  cursor: crosshair;
+}
+.ship5 {
+  width: 160px;
+  height: 210px;
+  position: absolute;
+  left: 45%;
+  top: -7%;
+  animation: flyingship5 8s;
+  cursor: crosshair;
+}
+.ship6 {
+  width: 10rem;
+  height: 13.5rem;
+  position: absolute;
+  left: 51%;
+  top: 9%;
+  animation: flyingship6 9s;
+  cursor: crosshair;
+
+}
+@keyframes flyingship1 {
+    0% {transform: translateX(100px);
+    height: 20px;
+width: 20px;}
+50% {transform: translateX(-800px);}
+100% {transform: translateX(0px);}
+}
+@keyframes flyingship2 {
+  0% {transform: translateX(200px);
+  height: 20px;
+width: 20px;}
+50% {transform: translateX(-300px);}
+100% {transform: translateX(0px);}
+}
+@keyframes flyingship3 {
+  0% {transform: translateX(600px);
+  height: 20px;
+width: 20px;}
+50% {transform: translateX(-50px);}
+100% {transform: translateX(0px);}
+}
+@keyframes flyingship4 {
+  0% {transform: translateX(600px);
+  height: 20px;
+width: 20px;}
+50% {transform: translateX(-50px);}
+100% {transform: translateX(0px);}
+}
+@keyframes flyingship5 {
+  0% {transform: translateX(-600px);
+  height: 20px;
+width: 20px;}
+50% {transform: translateX(-50px);}
+100% {transform: translateX(0px);}
+}
+@keyframes flyingship6 {
+  0% {transform: translateX(-600px);
+  height: 20px;
+width: 20px;}
+50% {transform: translateY(100px);}
+100% {transform: translateX(0px);}
+}
+
+.flyingalien1 {
+  width: 170px;
+  height: 290px;
+  position: absolute;
+  top: 21%;
+  left: 10%;
+  animation: flyingalien1 8s;
+}
+.flyingalien2 {
+  width: 90px;
+  height: 175px;
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  animation: flyingalien2 10s;
+}
+.flyingalien3 {
+  width: 130px;
+  height: 250px;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  animation: flyingalien3 7s;
+}
+@keyframes flyingalien2 {
+  0% { width: 40px; height: 70px;
+  transform: translateX(90px);}
+  40% { width: 90px; height: 175px;}
+  50% { transform: translateY(20px);}
+  60% { transform: translateY(-10px);}
+  70% { transform: translateY(10px);}
+  80% { transform: translateY(-10px);}
+  90% { transform: translateY(-10px);}
+  100% { transform: translateY(10px);}
+}
+@keyframes flyingalien1 {
+  0% { width: 50px; height: 90px;
+  transform: translateX(-170px);}
+  50% { transform: translateY(20px);}
+  75% { transform: translateY(-10px);}
+  100% { transform: translateY(10px);}
+
+}
+@keyframes flyingalien3 {  
+  0% { width: 40px; height: 70px;
+  transform: translateX(20px);}
+  50% { transform: translateY(20px);}
+  75% { transform: translateY(-10px);}
+  100% { transform: translateY(10px);}
+
+}
+
+.leftalien1 {
+  width: auto;
+  height: 140px;
+  position: absolute;
+  top: 52%;
+  left: 0%;
+ animation: leftalien1 6s;
+}
+@keyframes leftalien1 {
+  0% {transform: translateX(-150px);}
+  50% { transform: translateY(-30px);}
+  75% { transform: translateY(-3px);}
+  100% { transform: translateY(2px);}
+}
+.leftalien2 {
+  width: auto;
+  height: 160px;
+  position: absolute;
+  top: 73%;
+  left: 16%;
+ animation: leftalien2 5s;
+}
+@keyframes leftalien2 {
+  0% {transform: translateX(-300px);}
+  50% { transform: translateY(-50px);}
+  75% { transform: translateY(3px);}
+  100% { transform: translateY(-2px);}
+}
+.rightalien1 {
+  width: auto;
+  height: 130px;
+  position: absolute;
+  top: 57%;
+  right: 16%;
+ animation: rightalien1 6s;
+}
+@keyframes rightalien1 {
+  0% {transform: translateX(200px);}
+  50% { transform: translateY(-40px);}
+  75% { transform: translateY(-3px);}
+  100% { transform: translateX(2px);}
+}
+.rightalien2 {
+  width: auto;
+  height: 150px;
+  position: absolute;
+  top: 75%;
+  right: 10%;
+ animation: rightalien2 8s;
+}
+@keyframes rightalien2 {
+  0% {width: auto; height: 50px;
+    transform: translateX(200px);}
+  50% { transform: translateY(-80px);}
+  75% { transform: translateY(-3px);}
+  100% { transform: translateX(2px);}
+}
+.rightalien3 {
+  width: auto;
+  height: 130px;
+  position: absolute;
+  top: 74%;
+  right: 26%;
+ animation: rightalien3 7s;
+}
+@keyframes rightalien3 {
+  0% {width: auto; height: 50px;
+    transform: translateY(-50px);}
+  50% { transform: translateY(-80px);}
+  75% { transform: translateY(-3px);}
+  100% { transform: translateX(2px);}
+}
+.weaponbox {
+  width: auto;
+  height: 38px;
+  position: absolute;
+  top: 80%;
+  left: 35%;
+}
+/* STAGE 2 CSS ENDS HERE */

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gamestyle.css">
+    <link rel="stylesheet" href="stage3.css">
+    <style>
+      .background {
+        height:100vh;
+        width:100%;
+      }
+    </style>
+</head>
+<body>
+      <div id="gameFrame" onclick="randomEnemyAttacks()">
+        <img src="../Images/backgrounds/bg3.jpg" alt="" class="background">
+        <img src="../Images/characters/fire.gif" alt="" class="fire"> 
+        <div id="playerName">PlayerName</div>
+        <div id="healthBar"></div>
+         <div id="score">0</div>
+        <img src="../Images/characters/FlyingAlien1.png" alt="" id="bomber1" class="enemy" onclick="iShoot(this)">
+        <img src="../Images/characters/FlyingAlien1.png" alt="" id="bomber2" class="enemy" onclick="iShoot(this)">
+        <img src="../Images/characters/FlyingAlien1.png" alt="" id="bomber3" class="enemy" onclick="iShoot(this)">
+        <img src="../Images/characters/FlyingAlien1.png" alt="" id="bomber4" class="enemy" onclick="iShoot(this)">
+        <img src="../Images/characters/FlyingAlien1.png" alt="" id="bomber5" class="enemy" onclick="iShoot(this)">
+        <img src="../Images/characters/FlyingAlien1.png" alt="" id="bomber6" class="enemy" onclick="iShoot(this)">
+        <img src="../Images/characters/FlyingAlien1.png" alt="" id="realone" class="enemy" onclick="iShoot(this)">
+        <img src="../Images/characters/FlyingAlien1.png" alt="" id="bomber8" class="enemy" onclick="iShoot(this)">
+
+        
+        <img src="../Images/characters/weaponbox.png" alt="" class="weapon-box">
+        <!-- <div class="enemy" id="enemy1" onclick="iShoot(this)"></div>
+        <div class="enemy" id="enemy2" onclick="iShoot(this)"></div>
+        <div class="enemy" id="enemy3" onclick="iShoot(this)"></div>
+        <div class="enemy" id="enemy4" onclick="iShoot(this)"></div>
+        <div class="enemy" id="enemy5" onclick="iShoot(this)"></div> -->
+      </div>
+      <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <div class="wrapper">
+         <ul>
+           <h3>GAME PAUSED</h3>
+            <li><a href="stage3.html">Restart Level</a></li>
+            <!-- <li><a href="#">Game Levels</a></li> -->
+            <li><a href="howtoplay.html">How to Play ?</a></li>
+            <li><a href="aboutgame.html">ABOUT GAMES</a></li>
+            <li><a href="quitgame.html">Quit Game</a></li>
+         </ul>
+      </div>
+        <div class="footer-area">
+         <button class="musicbtn"></button>
+         <p id="taskbar">Find the Alien Bomber.</p>
+       </div>
+    <script src="stage3.js"></script>
+</body>
+</html>

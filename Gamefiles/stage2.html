@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="stage2.css">
+<link rel="stylesheet" href="gamestyle.css">
+    <style>
+      .background {
+        height:100vh;
+        width:100%;
+      }
+    </style>
+</head>
+<body>
+      <div id="gameFrame">
+        <img src="../Images/backgrounds/bg4.jpg" alt="" class="background">
+        <div id="playerName">PlayerName</div>
+        <div id="healthBar"></div>
+         <div id="score">0</div>
+         <img src="../Images/characters/aship3.png" alt="" id="humanship">
+
+         <img src="../Images/characters/Alien2.png" alt="" id="rightalien1" class="enemy" onclick="iShoot(this)">
+         <img src="../Images/characters/Alien2.png" alt="" id="rightalien2" class="enemy" onclick="iShoot(this)">
+         <img src="../Images/characters/Alien2.png" alt="" id="rightalien3" class="enemy" onclick="iShoot(this)">
+         <img src="../Images/characters/Alien1.png" alt="" id="rightalien4" class="enemy" onclick="iShoot(this)">
+         <img src="../Images/characters/Alien1.png" alt="" id="rightalien5" class="enemy" onclick="iShoot(this)">
+   
+         <img src="../Images/characters/Alien1.png" alt="" id="leftalien1" class="enemy" onclick="iShoot(this)">
+         <img src="../Images/characters/Alien2.png" alt="" id="leftalien2" class="enemy" onclick="iShoot(this)">
+         <img src="../Images/characters/Alien2.png" alt="" id="leftalien3" class="enemy" onclick="iShoot(this)">
+         <img src="../Images/characters/Alien1.png" alt="" id="leftalien4" class="enemy" onclick="iShoot(this)">
+         <img src="../Images/characters/Alien2.png" alt="" id="leftalien5" class="enemy" onclick="iShoot(this)">
+         <img src="../Images/characters/Alien1.png" alt="" id="leftalien6" class="enemy" onclick="iShoot(this)">
+         <img src="../Images/characters/Alien2.png" alt="" id="leftalien7" class="enemy" onclick="iShoot(this)">
+         <img src="../Images/characters/Alien2.png" alt="" id="leftalien8" class="enemy" onclick="iShoot(this)">
+   
+         <img src="../Images/characters/weaponbox.png" alt="" class="weapon-box">
+        <!-- <div class="enemy" id="enemy1" onclick="iShoot(this)"></div>
+        <div class="enemy" id="enemy2" onclick="iShoot(this)"></div>
+        <div class="enemy" id="enemy3" onclick="iShoot(this)"></div>
+        <div class="enemy" id="enemy4" onclick="iShoot(this)"></div>
+        <div class="enemy" id="enemy5" onclick="iShoot(this)"></div> -->
+      </div>
+      <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <div class="wrapper">
+         <ul>
+           <h3>GAME PAUSED</h3>
+            <li><a href="stage2.html">Restart Level</a></li>
+            <!-- <li><a href="#">Game Levels</a></li> -->
+            <li><a href="howtoplay.html">How to Play ?</a></li>
+            <li><a href="aboutgame.html">ABOUT GAMES</a></li>
+            <li><a href="quitgame.html">Quit Game</a></li>
+         </ul>
+      </div>
+        <div class="footer-area">
+         <button class="musicbtn"></button>
+         <p id="taskbar">Kill the remaining Aliens in Russia</p>
+       </div>
+<script src="stage2.js"></script>
+</body>
+</html>

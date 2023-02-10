@@ -1,0 +1,153 @@
+
+body {
+  cursor: crosshair;
+}
+#humanship {
+    height: 270px;
+    width: auto;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    animation: humanshipmoving 10s ease-in-out;
+  }
+  @keyframes humanshipmoving {
+    0%{transform: translateX(-500px);}
+    40%{transform: translateX(300px);}
+    70%{transform: translateY(-100px);}
+    100%{transform: translateY(0px);}
+  }
+
+#rightalien1 {
+  height: 110px;
+  width: auto;
+  top: 58%;
+  right: 1%;
+  /* animation: moving 3s infinite; */
+}
+#rightalien2 {
+  height: 140px;
+  width: auto;
+  position: absolute;
+  top: 78%;
+  right: 5%;
+  /* animation: moving 3s infinite; */
+}
+#rightalien3 {
+  height: 110px;
+  width: auto;
+  position: absolute;
+  top: 65%;
+  right: 22%;
+}
+#rightalien4{
+  height: 110px;
+    width: auto;
+    position: absolute;
+    top: 67%;
+    right: 12%;
+}
+#rightalien5{
+  height: 120px;
+  width: auto;
+  position: absolute;
+  top: 74%;
+  right: 29%;
+}
+
+#leftalien1{
+  height: 130px;
+    width: auto;
+    position: absolute;
+    top: 58%;
+    left: 1%;
+}
+#leftalien2{
+  height: 150px;
+    width: auto;
+    position: absolute;
+    top: 73%;
+    left: 7%;
+}
+#leftalien3 {
+  height: 150px;
+    width: auto;
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+#leftalien4{
+  height: 150px;
+    width: auto;
+    position: absolute;
+    top: 71%;
+    left: 25%;
+}
+#leftalien5{
+  height: 100px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 24%;
+}
+#leftalien6{
+  height: 100px;
+    width: auto;
+    position: absolute;
+    top: 51%;
+    left: 32%;
+}
+#leftalien7 {
+  height: 140px;
+  width: auto;
+  position: absolute;
+  top: 71%;
+  left: 38%;
+}
+#leftalien8{
+  height: 85px;
+    width: auto;
+    position: absolute;
+    top: 56%;
+    left: 43%;
+}
+.weapon-box{
+    position: absolute;
+    height: 45px;
+    width: auto;
+    top: 88%;
+    left: 33%;
+  }
+
+
+  .enemy {
+	width: 150px;
+	height: 400px;
+  top: 5%;
+	position: absolute;
+	transition: all .5s;
+}
+
+.enemy.showing {
+	bottom: 0;
+}
+
+.enemy.shooting {
+	background-color: red;
+}
+.gayab {
+  opacity: 0%;
+} 
+
+.enemy.dead {
+  animation: deadhogaya 4s;
+  position: absolute;
+  top: -40%;
+}
+@keyframes deadhogaya{
+0% {
+  background-image: url('../Images/characters/explosion.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}  
+}   

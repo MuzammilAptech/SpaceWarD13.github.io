@@ -1,0 +1,108 @@
+#bomber1 {
+    position: absolute;
+    width: auto;
+    height: 350px;
+    top: 10%;
+    left:-20%;
+    animation: escaping 16s infinite ease-in-out;
+}
+#bomber2 {
+    position: absolute;
+    width: auto;
+    height: 350px;
+    top: 10%;
+    left:-20%;
+    animation: escaping 14s infinite ease-in-out;
+}
+#bomber3 {
+    position: absolute;
+    width: auto;
+    height: 350px;
+    top: 10%;
+    left:-20%;
+    animation: escaping 12s infinite ease-in-out;
+}
+
+#bomber4 {
+    position: absolute;
+    width: auto;
+    height: 350px;
+    top: 10%;
+    left:-20%;
+    animation: escaping 10s infinite ease-in-out;
+}
+#bomber5 {
+    position: absolute;
+    width: auto;
+    height: 350px;
+    top: 10%;
+    left:-20%;
+    animation: escaping 9s infinite ease-in-out;
+}
+#bomber6 {
+    position: absolute;
+    width: auto;
+    height: 350px;
+    top: 10%;
+    left:-20%;
+    animation: escaping 8s infinite ease-in-out;
+}
+
+#realone {
+    position: absolute;
+    width: auto;
+    height: 350px;
+    top: 10%;
+    left:-20%;
+    animation: escaping 5s infinite ease-in-out;
+}
+#bomber8 {
+    position: absolute;
+    width: auto;
+    height: 350px;
+    top: 10%;
+    left:-20%;
+    animation: escaping 6s infinite ease-in-out;
+}
+
+@keyframes escaping {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(1700px);}
+}
+
+
+.gayab {
+    opacity: 0%;
+}
+
+.enemy {
+	width: 150px;
+	height: 400px;
+  top: 5%;
+	position: absolute;
+	transition: all .5s;
+}
+
+.enemy.showing {
+	bottom: 0;
+}
+
+.enemy.shooting {
+	background-color: red;
+}
+
+
+
+.enemy.dead {
+  animation: deadhogaya 4s;
+  position: absolute;
+  top: -40%;
+}
+@keyframes deadhogaya{
+0% {
+  background-image: url('../Images/characters/explosion.gif');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}  
+}

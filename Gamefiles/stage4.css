@@ -1,0 +1,22 @@
+.mainboss {
+    height: 400px;
+    width: auto;
+    position: absolute;
+    top:6%;
+    left: 24%;
+    animation: bosscoming 10s;
+  }
+
+  /* @keyframes bosscoming {
+    0% {transform: translateY(150px);
+    height: 100px;
+  }
+} */
+.bosshp {
+    width: 30%;
+    height: 2rem;
+    background-color: aliceblue;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
